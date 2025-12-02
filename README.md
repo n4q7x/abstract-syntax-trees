@@ -41,4 +41,29 @@ Then there is the idea that in order to describe what a thing is *like*, we can 
 
 This is sort of leading to a recent theme in my thinking which is that relations and functions are not as similar as we are sometimes told. Relations are static descriptions; functions change what is being talked about. The formulation of a statement, introducing it into the current context of discourse, is an action. 
 
+***
+
+Anyway, let's see if we can define our first-order logic formulae, now.
+
+I want to be able to say that there are kinds of things. But I want kinds of things to be a posteriori, not a priori. So I can introduce certain things into a context, of what we have been talking about so far.
+
+So here's... formalizing a formalization...:
+
+D is an arbitrary set of values, say of possible things.
+
+Which set is the current discourse context is not something we can express in set theory. We can only say that for some given set, a person can add more to the context.
+
+Like:
+
+<pre>
+```math
+D
+d \subseteq D
+x \in D
+add(x,d) \subseteq D
+```
+</pre>
+
+That means that our "states" are kind of pegged to what collection of d's we currently have; which is like a subset of D.
+
 
