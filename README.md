@@ -66,4 +66,36 @@ add(x,d) \subseteq D
 
 That means that our "states" are kind of pegged to what collection of d's we currently have; which is like a subset of D.
 
+***
+
+Back to the goal: describing formulae of first-order logic: how to make them, how to take them apart. Perhaps we can describe this whole theory in a comprehensive and variegated list of simple assertions.
+
+```
+UPPER
+There are things.
+(Every thing is a thing.)
+There are kinds of things.
+(A thing can have more than one kind.)
+There are things about things.
+(A thing about a thing has 2 parts: the aboutness, and the thing fulfilling it.)
+Things can change something about them.
+You change a thing by acting on it.
+Some actions create a thing that did not exist, was not there, was not present, before.
+Some actions change a thing about a thing.
+
+MIDDLE
+A thing is first-order logic.
+Some things about first-order logic are what it is, what it's like, what kind of thing it is, what it is made of, what are its parts, what it can do, what can be said about it, how it works, and what are its rules.
+First-order logic what it is is a formal system, a language, a logic, a type of logic, a foundation for mathematics.
+A part of first-order logic is formulae, and inference rules.
+A rule of first-ordee logic is the rule, "You start with some terms and you make formulae from them."
+
+
+LOWER
+
+
+
+```
+
+Let's start there, and enumerate.
 
