@@ -24,8 +24,18 @@ class OntologyParser:
         
     def parse_file(self, filename: str):
         """Parse an ontology file"""
-        with open(filename, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
+        try:
+            with open(filename, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+        except FileNotFoundError:
+            print(f"Error: File '{filename}' not found", file=sys.stderr)
+            sys.exit(1)
+        except PermissionError:
+            print(f"Error: Permission denied reading file '{filename}'", file=sys.stderr)
+            sys.exit(1)
+        except Exception as e:
+            print(f"Error: Could not read file '{filename}': {e}", file=sys.stderr)
+            sys.exit(1)
         
         for line_num, line in enumerate(lines, 1):
             line = line.strip()

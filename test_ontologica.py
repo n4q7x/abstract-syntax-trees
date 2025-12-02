@@ -4,8 +4,8 @@ Simple tests for the Ontologica parser
 """
 
 import sys
-import os
 from ontologica import OntologyParser
+
 
 
 def test_entity_declaration():
