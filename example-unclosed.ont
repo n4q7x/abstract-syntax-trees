@@ -1,0 +1,14 @@
+# Example with unclosed predicates
+
+A thing is mathematics.
+A thing about mathematics is what it is.
+A thing about mathematics is what it's used for.
+A thing about mathematics is what are its branches.
+
+# Only provide values for some predicates
+mathematics what it is a formal science
+mathematics what are its branches algebra
+mathematics what are its branches geometry
+mathematics what are its branches calculus
+
+# Note: "what it's used for" has no values (unclosed)
