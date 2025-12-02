@@ -7,7 +7,6 @@ import sys
 from ontologica import OntologyParser
 
 
-
 def test_entity_declaration():
     """Test entity declaration parsing"""
     parser = OntologyParser()
