@@ -1,0 +1,32 @@
+# Example ontology file for first-order logic
+# Based on the envisioning-ontologica specification
+
+# Entity declarations
+A thing is first-order logic.
+
+# Predicate declarations
+A thing about first-order logic is what it's like.
+A thing about first-order logic is what kind of thing it is.
+A thing about first-order logic is what are its rules.
+A thing about first-order logic is what it is.
+A thing about first-order logic is what it's made of.
+A thing about first-order logic is what are its parts.
+
+# Value assignments
+first-order logic what it's like a formal language
+first-order logic what it is a formal system
+first-order logic what kind of thing it is a formal system
+first-order logic what it's made of a collection of formulae
+first-order logic what are its parts rules
+first-order logic what are its parts symbols
+first-order logic what are its rules take some statements and draw inferences on them
+
+# Additional entities and relations
+first-order logic what are its parts theories
+A thing is theories.
+A thing about theories is what are its parts.
+theories what are its parts formulae
+
+A thing is formulae.
+A thing about formulae is what are its parts.
+formulae what are its parts symbols

@@ -1,6 +1,25 @@
 # abstract-syntax-trees
 Just some experimenting and thinking.
 
+## Ontologica - Plaintext Ontology Parser
+
+This repository now includes **Ontologica**, a working implementation of the plaintext ontology specification described in the `envisioning-ontologica` file. 
+
+### Quick Start
+
+```bash
+# Run the parser on an example ontology
+python3 ontologica.py example.ont
+
+# Run in interactive mode to check completeness
+python3 ontologica.py example.ont --interactive
+
+# Run tests
+python3 test_ontologica.py
+```
+
+See [ONTOLOGICA.md](ONTOLOGICA.md) for complete documentation.
+
 ***
 
 I would like to write some kind of symbolic logic engine for first-order logic in a programming language, and then carry out proofs and the rewriting of formulae using it. However, there are some conceptual questions that come up, along the way, that I would like to think through.
