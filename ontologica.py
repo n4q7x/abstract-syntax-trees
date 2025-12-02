@@ -58,10 +58,12 @@ class OntologyParser:
         # Pattern 3: "<entity> <predicate> <value>"
         # This is more complex as we need to find where the predicate starts
         # We'll try to match known predicates
-        for entity in self.entities:
+        # Sort entities by length (longest first) to handle substring cases correctly
+        for entity in sorted(self.entities, key=len, reverse=True):
             if line.lower().startswith(entity.lower()):
                 rest = line[len(entity):].strip()
-                for predicate in self.predicates.get(entity, []):
+                # Sort predicates by length (longest first) to handle substring cases
+                for predicate in sorted(self.predicates.get(entity, []), key=len, reverse=True):
                     if rest.lower().startswith(predicate.lower()):
                         value = rest[len(predicate):].strip()
                         if value:
