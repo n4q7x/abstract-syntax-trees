@@ -1,0 +1,36 @@
+Imagine this is a plaintext program:
+
+
+A thing is first-order logic.
+A thing about first-order logic is what it’s like.
+A thing about first-order logic is what kind of thing it is.
+A thing about first-order logic is what are its rules.
+A thing about first-order logic is what it is.
+A thing about first-order logic is what it’s made of. 
+A thing about first-order logic is what are its parts.
+
+This is equivalent to populating a little formal ontology. An entity/atom/thing is “first order logic”. All the “things about” are predicates which are defined for that thing.
+
+Imagine a program where you just run it on a plaintext program like that and it returns certain info about the ontology. It knows you declared that those predicates are defined for “first order logic”, but it knows you didn’t state a value for them. So it tells you like, these predicates haven’t been closed. (There has to be at least one assertion for each of them.)
+
+So the user adds to the file:
+
+First order logic what its like a formal language
+First order logic what it is a formal system
+First order logic what kind of thing it is a formal system
+First order logic what it’s made of a collection of formulae
+First order logic what are its parts rules
+First order logic what are its parts symbols
+First order logic what are its rules “take some statements and draw inferences on them”
+
+Now the program detects every predicate is closed.
+
+Now the program asks you if every predicate is complete. For the entity first order logic, it prints each predicate, and the values it’s defined for that predicate. It interactively asks you if this predicate should be considered complete (like if that’s everything that can be said about that predicate). The user simply states yes or no. If no, the program knows that certain predicates are incomplete, and it will remind the user whenever they print out something, that the ontology needs those predicates completed (eventually, it’s like tests currently not passing).
+
+Then hopefully you enumerate sentences up to a depth and decide them either one by one or with FOL formulae. 
+
+Then you add some more:
+
+First order logic what are its parts theories.
+Theories what are its parts formulae.
+Formulae what are its parts symbols.
